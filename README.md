@@ -1,6 +1,6 @@
 # Digix Web UI
 
-## Сборка и пуш
+## Сборка
 ```
 docker buildx build \
   --platform linux/amd64 \
