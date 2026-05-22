@@ -1,10 +1,28 @@
 # Digix Web UI
 
+## Сборка и пуш
+```
+docker buildx build \
+  --platform linux/amd64 \
+  --build-arg VITE_API_BASE_URL=http://37.1.215.81:18080 \
+  -t yuriydubinin100/digix-web-ui:1.0.0 \
+  --load \
+  .
+```
+
 ## Запуск
 ```
-docker build --build-arg VITE_API_BASE_URL=$(grep VITE_API_BASE_URL .env | cut -d= -f2-) -t digix-web-ui .
+docker run -d \
+  --name digix-web-ui \
+  -p 3000:80 \
+  yuriydubinin100/digix-web-ui:1.0.0
+```
+
+## Деплой
+```
+docker push yuriydubinin100/digix-web-ui:1.0.0
 ```
 
 ```
-docker run -d --name digix-web-ui -p 3000:80 digix-web-ui
+docker pull yuriydubinin100/digix-web-ui:1.0.0
 ```

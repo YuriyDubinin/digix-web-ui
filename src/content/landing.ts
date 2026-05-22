@@ -170,7 +170,7 @@ export const landing: LandingContent = {
         description:
           'Полный цикл: фронтенд, бэкенд, антифрод, интеграции с банками. С нуля до 50 000 заявок в месяц за 9 месяцев.',
         tags: ['React', 'Go', 'PostgreSQL', 'Kubernetes'],
-        image: '/case-fintech.svg',
+        image: '/startup.png',
         imageAlt: 'Иллюстрация кейса fintech-платформы',
       },
       {
@@ -180,7 +180,7 @@ export const landing: LandingContent = {
         description:
           'Realtime-трекинг, оптимизация маршрутов на ML, мобильное приложение для водителей. Снижение пустых пробегов на 23%.',
         tags: ['React Native', 'Python', 'Kafka', 'AWS'],
-        image: '/case-logistics.svg',
+        image: '/car-park.png',
         imageAlt: 'Иллюстрация кейса логистической системы',
       },
       {
@@ -190,7 +190,7 @@ export const landing: LandingContent = {
         description:
           'RAG поверх базы знаний клиента + интеграция в чат. Автоматическая обработка 60% первичных обращений.',
         tags: ['Next.js', 'LangChain', 'OpenAI', 'pgvector'],
-        image: '/case-ai.svg',
+        image: '/assistant.png',
         imageAlt: 'Иллюстрация кейса AI-ассистента',
       },
     ],

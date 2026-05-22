@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/motion/FadeIn';
 import { ScrollReveal } from '@/components/motion/ScrollReveal';
+import { PulsingImage } from '@/components/motion/PulsingImage';
 import { revealItemVariants } from '@/components/motion/variants';
 import { Badge } from '@/components/ui/Badge';
 import { cn } from '@/lib/cn';
@@ -23,16 +24,14 @@ function CaseImage({ caseItem }: { caseItem: Case }) {
           aria-hidden
           className="absolute inset-0 bg-grid-pattern opacity-50"
         />
-        <img
+        <PulsingImage
           src={caseItem.image}
           alt={caseItem.imageAlt}
-          loading="lazy"
           width={1280}
           height={720}
-          className="relative h-full w-full object-contain p-8 opacity-80"
+          className="relative h-full w-full object-contain p-8"
           onError={(e) => {
-            // Graceful fallback if SVG asset is missing in /public
-            e.currentTarget.style.display = 'none';
+            (e.currentTarget as HTMLImageElement).style.display = 'none';
           }}
         />
       </div>

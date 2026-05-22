@@ -1,6 +1,7 @@
 import { Container } from '@/components/layout/Container';
 import { FadeIn } from '@/components/motion/FadeIn';
 import { ScrollReveal } from '@/components/motion/ScrollReveal';
+import { PulsingImage } from '@/components/motion/PulsingImage';
 import { motion } from 'framer-motion';
 import { revealItemVariants } from '@/components/motion/variants';
 import { MetricCard } from './MetricCard';
@@ -38,26 +39,22 @@ export function About() {
                     'radial-gradient(ellipse at center, rgba(99,102,241,0.3) 0%, transparent 70%)',
                 }}
               />
-              {/* Image placeholder */}
+              {/* Earth image */}
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-bg-surface/60 backdrop-blur-sm">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img
-                    src="/digix-logo-big.png"
-                    alt="Digix — команда профессионалов"
-                    width={400}
-                    height={160}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-auto max-h-40 w-auto max-w-[60%] object-contain opacity-30"
-                  />
-                </div>
-                {/* Decorative grid */}
+                {/* Decorative grid behind */}
                 <div
                   aria-hidden
                   className="absolute inset-0 opacity-5"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0H0V40' fill='none' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E")`,
                   }}
+                />
+                <PulsingImage
+                  src="/earth.png"
+                  alt="Цифровые решения для глобального бизнеса"
+                  width={800}
+                  height={600}
+                  className="relative h-full w-full object-contain p-6"
                 />
               </div>
             </div>
