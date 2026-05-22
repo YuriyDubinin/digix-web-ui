@@ -249,6 +249,10 @@ export const landing: LandingContent = {
       { name: 'GCP' },
       { name: 'Terraform' },
       { name: 'OpenAI' },
+      { name: 'C++' },
+      { name: 'Elasticsearch' },
+      { name: 'Redis' },
+      { name: 'NATS' },
     ],
   },
 

@@ -33,7 +33,7 @@ export function PulsingImage({
       decoding="async"
       className={className}
       onError={onError}
-      animate={shouldReduceMotion ? undefined : { opacity: [0.65, 1, 0.65] }}
+      animate={shouldReduceMotion ? undefined : { opacity: [0.25, 1, 0.25] }}
       transition={
         shouldReduceMotion
           ? undefined
