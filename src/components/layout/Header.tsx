@@ -54,9 +54,9 @@ export function Header() {
         <AnchorLink
           href="/#hero"
           className="font-display text-xl font-bold tracking-tight text-text-primary hover:text-text-primary/90 md:text-2xl"
-          aria-label="Digix — на главную"
+          aria-label="Dijex — на главную"
         >
-          Digix
+          Dijex
         </AnchorLink>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Основная навигация">

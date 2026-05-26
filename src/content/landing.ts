@@ -107,7 +107,7 @@ export const landing: LandingContent = {
     badge: '🚀 Innovative digital solutions',
     title: 'Цифровые решения проблем',
     subtitle:
-      'Digix создаёт высокотехнологичные продукты для среднего и крупного бизнеса: от веб-платформ до AI-интеграций, которые масштабируются вместе с вами.',
+      'Dijex создаёт высокотехнологичные продукты для среднего и крупного бизнеса: от веб-платформ до AI-интеграций, которые масштабируются вместе с вами.',
     primaryCta: { label: 'Обсудить проект', href: '#contact' },
     secondaryCta: { label: 'Узнать об услугах', href: '#services' },
   },
@@ -269,20 +269,20 @@ export const landing: LandingContent = {
   },
 
   footer: {
-    tagline: 'Digix — цифровые решения для среднего и крупного бизнеса.',
+    tagline: 'Dijex — цифровые решения для среднего и крупного бизнеса.',
     navTitle: 'Навигация',
     contactsTitle: 'Контакты',
     socialsTitle: 'Соцсети',
     contacts: [
-      { label: 'hello@digix.tech', href: 'mailto:hello@digix.tech' },
+      { label: 'hello@dijex.tech', href: 'mailto:hello@dijex.tech' },
       { label: '+7 (999) 123-45-67', href: 'tel:+79991234567' },
     ],
     socials: [
-      { label: 'Telegram', href: 'https://t.me/digix' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/company/digix' },
-      { label: 'GitHub', href: 'https://github.com/digix' },
+      { label: 'Telegram', href: 'https://t.me/dijex' },
+      { label: 'LinkedIn', href: 'https://linkedin.com/company/dijex' },
+      { label: 'GitHub', href: 'https://github.com/dijex' },
     ],
-    copyright: '© 2026 Digix. Все права защищены.',
+    copyright: '© 2026 Dijex. Все права защищены.',
     privacyLink: { label: 'Политика конфиденциальности', href: '/privacy' },
   },
 };

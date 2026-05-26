@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="font-display text-2xl font-bold tracking-tight text-text-primary">
-              Digix
+              Dijex
             </div>
             <p className="mt-4 max-w-xs text-small text-text-secondary">{footer.tagline}</p>
           </div>

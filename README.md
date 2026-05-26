@@ -1,11 +1,11 @@
-# Digix Web UI
+# Dijex Web UI
 
 ## Сборка
 ```
 docker buildx build \
   --platform linux/amd64 \
   --build-arg VITE_API_BASE_URL=http://37.1.215.81:18080 \
-  -t yuriydubinin100/digix-web-ui:1.0.0 \
+  -t yuriydubinin100/dijex-web-ui:1.0.0 \
   --load \
   .
 ```
@@ -13,16 +13,16 @@ docker buildx build \
 ## Запуск
 ```
 docker run -d \
-  --name digix-web-ui \
+  --name dijex-web-ui \
   -p 3000:80 \
-  yuriydubinin100/digix-web-ui:1.0.0
+  yuriydubinin100/dijex-web-ui:1.0.0
 ```
 
 ## Деплой
 ```
-docker push yuriydubinin100/digix-web-ui:1.0.0
+docker push yuriydubinin100/dijex-web-ui:1.0.0
 ```
 
 ```
-docker pull yuriydubinin100/digix-web-ui:1.0.0
+docker pull yuriydubinin100/dijex-web-ui:1.0.0
 ```
